@@ -28,12 +28,12 @@ class TestSphere < Test::Unit::TestCase
   end
 
   def test_volume
-    expected_value = 9202.772079916307
+    expected_value = 6902.07905993723
     assert_equal(expected_value, @sphere.volume)
 
     @sphere.radius = 40
 
-    expected_value = 268082.5731063467
+    expected_value = 201061.92982976002
     assert_equal(expected_value, @sphere.volume)
   end
 end
