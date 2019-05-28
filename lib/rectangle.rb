@@ -13,8 +13,6 @@ class Rectangle < GeometricBase
   end
 
   def perimeter
-    valor1 = sum(@height, @height)
-    valor2 = sum(@width, @width)
-    sum(valor1, valor2)
+    sum(multiply(@height,2),multiply(@width, 2)) 
   end
 end

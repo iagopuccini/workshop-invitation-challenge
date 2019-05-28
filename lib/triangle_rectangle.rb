@@ -9,16 +9,11 @@ class TriangleRectangle < GeometricBase
   end
 
   def area
-    result = multiply(@base, @height)
-    divide(result, 2)
+    divide(multiply(@base,@height),2)
   end
 
   def perimeter
-    base2 = exponentiation(@base, 2)
-    height2 = exponentiation(@height, 2)
-    c = sum(base2, height2)
-    c_reduzido = Math.sqrt(c)
-    soma = sum(@base, @height)
-    sum(soma, c_reduzido)
-  end
+    c = sum(exponentiation(@base, 2), exponentiation(@height, 2))
+    sum(sum(@base, @height), Math.sqrt(c))
+    end
 end

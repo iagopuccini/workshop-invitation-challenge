@@ -8,12 +8,10 @@ class Circle < GeometricBase
   end
 
   def area
-    result = exponentiation(@radius, 2)
-    multiply(PI,result)
+    multiply(exponentiation(@radius,2),PI)
   end
 
   def perimeter
-    pi2 = multiply(PI, 2)
-    multiply(pi2, @radius)
+    multiply(multiply(PI,2),@radius)
   end
 end

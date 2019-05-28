@@ -8,21 +8,14 @@ class Sphere < GeometricBase
   end
 
   def area
-    radius2 = exponentiation(@radius, 2)
-    result = multiply(4, PI)
-    multiply(radius2, result)
+    multiply(exponentiation(@radius,2),multiply(PI,4))
   end
 
   def perimeter
-    diametro = multiply(2, @radius)
-    multiply(PI, diametro)   
+    multiply(multiply(@radius,2),PI)  
   end
 
   def volume
-    result = multiply(4, PI)
-    radius3 = exponentiation(@radius, 3)
-        result2 = multiply(result, radius3)
-    divide(result2, 3)
-    #4/3.0 * PI * @radius ** 3
-  end
+    multiply(multiply(divide(4,3),PI), exponentiation(@radius,3))
+    end
 end
