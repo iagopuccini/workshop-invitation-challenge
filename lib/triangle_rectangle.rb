@@ -15,5 +15,5 @@ class TriangleRectangle < GeometricBase
   def perimeter
     c = sum(exponentiation(@base, 2), exponentiation(@height, 2))
     sum(sum(@base, @height), Math.sqrt(c))
-    end
+  end
 end

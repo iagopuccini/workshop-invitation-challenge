@@ -17,5 +17,5 @@ class Sphere < GeometricBase
 
   def volume
     multiply(multiply(divide(4,3),PI), exponentiation(@radius,3))
-    end
+  end
 end
